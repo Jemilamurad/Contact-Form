@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 600px;
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 150px 0;
+}
+
+form h2 {
+  color: #000;
+  align-self: flex-start;
+}
+.form-check-input {
+  margin-top: -25px;
+  margin-left: 20px;
+}
+.second {
+  margin-top: 30px;
+}
+.second::placeholder,
+.first::placeholder {
+  padding-left: 30px;
+}
+.btn {
+  background-color: hsl(169, 82%, 27%);
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+}
+
+input[type="text"]:disabled {
+  background-color: #fff;
+}
+.important {
+  color: blue;
+}
+.error-message {
+  margin-bottom: 10px;
+}
+.modal.modal-sheet {
+  top: 0;
+  position: absolute;
+}
+
+.modal-dialog {
+  margin-top: 0;
+}
+
+@media (max-width: 575px) {
+  form {
+    width: 400px;
+    height: auto;
+  }
+
+  #message {
+    width: 90%; /* Reduce the width */
+    height: 200px; /* Increase the height */
+  }
+  .second {
+    margin-top: 0px;
+  }
+}
